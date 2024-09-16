@@ -83,12 +83,14 @@ main:hover {
 }
 
 main:hover .btn {
+  cursor: pointer;
   visibility: visible;
   transform: translateY(-50px);
   transition: 1s;
 }
 
 main:hover .save {
+  cursor: pointer;
   visibility: visible;
   transform: translateY(40px);
   transition: 1s;
