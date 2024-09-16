@@ -41,12 +41,16 @@ main {
 
 //------container---------
 
+
 .container {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
+    position: absolute;
     margin: 0 60px 20px 20px;
+    bottom: -60px;
 }
+
 
 //----Buttons------
 
@@ -55,7 +59,8 @@ main {
     align-items: center;
     justify-content: center;
     background-color: white;
-    display: none;
+    visibility: hidden;
+    
     opacity: 0.7;
     margin: 10px;
     font-size: 20px;
@@ -71,8 +76,8 @@ main {
 .save {
     display: flex;
     position: absolute;
-    display: none;
-    top: 40px;
+    visibility:hidden;
+    top: -10px;
     right:45px;
     align-items: center;
     justify-content: center;
@@ -85,14 +90,19 @@ main {
 //----Effects------------
 
 main:hover {
-    transition: 0.5s;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/sfondo.png");
 }
+    
 
 main:hover .btn {
-    display: flex;
+    visibility: visible;
+    transform: translateY(-50px);
+    transition:1s;
 }
 
 main:hover .save {
-    display: flex;
+    visibility: visible;
+    transform: translateY(40px);
+    transition: 1s;
 }
+   
